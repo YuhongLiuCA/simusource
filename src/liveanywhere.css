@@ -1,0 +1,70 @@
+h2 {
+    text-align: left;
+    margin-left: 60px;
+    font-size:36px;
+    margin-bottom: 15px;
+}
+#liveanywhere_all {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 10px;
+    margin-left: 30px;
+}
+#liveanywhere_content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-left: 30px;
+    text-align: left;
+}
+#liveanywhere_img {
+    width:20vw;
+    height: auto;
+    border: none;
+    border-radius: 15px;
+}
+#liveanywhere_text {
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    margin-top: 10px;
+}
+#liveanywhere_text_name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#liveanywhere_text_distance {
+    font-size: 16px;
+    font-weight: normal;
+}
+#liveanywhere_hosting {
+    position:relative;
+    text-align: left;
+    color:white;
+}
+#liveanywhere_img_hosting {
+    width: 90vw;
+    margin-top: 50px;
+    margin-left: 60px;
+    border-radius: 30px;
+
+}
+#liveanywhere_text_hosting {
+    position: absolute;
+    top: 180px;
+    left: 120px;
+    font-size: 36px;
+    color:white;
+    font-weight: bold;
+}
+#liveanywhere_text_hosting_small{
+    font-size: 22px;
+    color:white;
+    margin-top: 10px;
+    width: 20vw;
+    font-weight:normal;
+}

@@ -3,36 +3,269 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 40px;
   pointer-events: none;
+  margin-left:40px;
+  margin-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.title_menu {
+  color: white;
+  font-size: 18px;
+  margin-left: 60px;
+  margin-top: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+
+.title_signin {
+  color: white;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-top: 35px;
+}
+
+#menu_signin_icon {
+  margin-top: 40px;
+}
+
+#menu_group {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menu_signin {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+}
+#title_become {
+  font-size: 16px;
+  font-weight: bold;
+}
+#user_login {
+  background-color: white;
+  color: grey;
+  height: 40px;
+  width: 70px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#menu_search {
+  background-color: white;
+  display:flex;
+  flex-direction: row;
+  border-radius: 30px;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin-top: 20px;
+}
+
+.search_setting {
+  display: flex;
+  flex-direction:column;
+}
+
+.search_label {
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+#menu_expereince {
+  background-color: white;
+  display:flex;
+  flex-direction: row;
+  border-radius: 30px;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin-top: 20px;
+}
+
+input{
+  cursor:pointer;
+}
+input:focus {
+  border: none;
+  outline: none;
+}
+.search_item {
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.hr_title {
+  height: 30px;
+  color: rgb(234,234,234);
+  background-color: grey;
+  margin-top: 15px;
+  border: none;
+  width: 1px;
+}
+#search_icondiv {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color:rgb(255,56,92);
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 15px;
+  justify-content: center;
+}
+#search_icon {
+  padding: 12px 12px;
+}
+#menu_flexible {
+  background-color: transparent;
+  display:flex;
+  flex-direction: column;
+  border: none;
+  position: absolute;
+  bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+}
+#button_flexible {
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  width: 260px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  margin-top: 20px;  
+}
+#button_flexibleText {
+  background: linear-gradient(to right, rgb(114,2,156) 0%, rgb(192,56,160) 100%);
+  background: linear-gradient(45deg, rgb(114,2,156), rgb(192,56,160));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+#checkin_item {
+  border: none;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+#checkout_item {
+  border: none;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+#flexible_item {
+  border: none;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+#flexibale_form {
+  background: white;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  width: 400px;
+  height: 120px;
+  border-radius: 20px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#guest_form {
+  background: white;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  width: 400px;
+  height: 260px;
+  border-radius: 20px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#title_simulation {
+  width: 400px;
+  height: 260px;
+  border: none;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  position:fixed;
+}
+
+
+/*@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}*/
+
+.App-header { 
+  height: 85vh;
+  background-image: url("header_photo.jpg");
+  background-size: 100% auto; 
+  background-color: white;
+  
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  align-items: left;
+  justify-content: left;
+  /*font-size: calc(10px + 2vmin);*/
+  color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+  cursor: pointer;
+}
+#adult_de:hover, #adult_in:hover, #child_de:hover, #child_in:hover, #infant_de:hover, #infant_in:hover{
+  cursor: pointer;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/*.input-container .react-datepicker-wrapper {
+  margin: 12px 0;
+  width: 100%;
+}
+
+.input-container .react-datepicker-wrapper input {
+  padding: 4px 12px;
+}*/
+
+
+/*@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+}*/

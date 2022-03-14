@@ -1,0 +1,47 @@
+h2 {
+    text-align: left;
+    margin-left: 60px;
+    font-size:36px;
+    margin-bottom: 15px;
+}
+#inspiration_header{
+    
+    display: flex;
+    flex-direction: row;
+}
+.inspiration_header_button{
+    border: none;
+    background-color: white;
+    font-size:16px;
+    text-align: left;
+    margin-left: 20px;
+    padding-left:40px;
+}
+
+#inspiration_header_hr{
+    margin-left: 20px;
+    padding-left:40px;
+}
+
+.inspiration_header_button:hover{
+    cursor:pointer;
+}
+
+.inspiration_item{
+    width: 20vw;
+    margin-left: 60px;
+    padding-left:60px;
+}
+.inspiration_item_one{
+    color: black;
+    font-size: 16px;
+    margin-top:10px;
+    text-align:left;
+}
+.inspiration_item_two{
+    color: grey;
+    font-size: 16px;
+    margin-top:5px;
+    margin-bottom:20px;
+    text-align:left;
+}

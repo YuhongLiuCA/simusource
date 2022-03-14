@@ -1,0 +1,45 @@
+h2 {
+    text-align: left;
+    margin-left: 60px;
+    font-size:36px;
+    margin-bottom: 15px;
+}
+#nearby_all {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 10px;
+}
+.nearby_content {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: none;
+    margin-left: 60px;
+    margin-right: 35px;
+    margin-top: 15px;
+}
+.nearby_content:hover {
+    cursor:pointer
+}
+.nearby_img {
+    width:60px;
+    height: 60px;
+    border: none;
+    border-radius: 6px;
+}
+.nearby_text {
+    display: flex;
+    flex-direction: column;
+    margin-left:15px;
+    text-align:left;
+    margin-top: 10px;
+}
+.nearby_text_name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.nearby_text_distance {
+    font-size: 16px;
+    font-weight: normal;
+}
