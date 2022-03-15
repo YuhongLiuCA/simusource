@@ -306,44 +306,44 @@ function App() {
           </div>
         </div>
         {titleChoice === 0 ?
-        <form id="menu_search" onClick={handleFormClick} autoComplete="off">
-          <div class="search_setting">
-            <label for="search_location" class="search_label">Location</label>
-            <input name="search_location" value={searchPlace} class="search_item" type="text" placeholder="Where are you going?" onClick={handleSearchPlace} onChange={handleFlexibleChange}/>
-          </div>
-          <hr class="hr_title"/>
-          <div class="search_setting">
-            <label for="search_location" class="search_label">Checkin</label>
-            <DatePicker selected={checkinDate} showPopperArrow={false} onChange={date => { setCheckinDate(date);if(checkoutDate < date && checkoutDate !== '' ) setCheckoutDate(date);}} locale="es" minDate={new Date()} id="checkin_item" format='MM-dd-yyyy' type="date" placeholderText="Add dates" />
-          </div>
-          <hr class="hr_title"/>
-          <div class="search_setting">
-            <label for="search_location" class="search_label">Checkout</label>
-            <DatePicker selected={checkoutDate} showPopperArrow={false} onChange={date => {setCheckoutDate(date); if(date < checkinDate) setCheckinDate(date);}} locale="es" minDate={checkinDate} id="checkout_item" format='MM-dd-yyyy' type="date" placeholderText="Add dates"/>
-          </div>
-          <hr class="hr_title"/>
-          <div class="search_setting">
-            <label for="search_location" class="search_label">Guests</label>
-            <input name="search_location" class="search_item" type="text" placeholder="Add guests" value={guestValue} onClick={handleGuestChange}/>
-          </div>
-          <div id="search_icondiv">
-            <AiOutlineSearch id="search_icon" />
-          </div>
-        </form>  : titleChoice === 1 ?
-        <form id="menu_expereince" autoComplete="off">
-        <div class="search_setting">
-          <label for="search_location" class="search_label">Location</label>
-          <input name="search_location" class="search_item" type="text" placeholder="Where are you going?" />
-        </div>
-        <hr class="hr_title"/>
-        <div class="search_setting">
-          <label for="search_date" class="search_label">Date</label>
-          <DatePicker selected={flexibleDate} showPopperArrow={false} onChange={date => setFlexibleDate(date)} locale="es" minDate={new Date()} id="flexible_item" format='MM-dd-yyyy' type="date" placeholderText="Add dates"/>
-        </div>
-        <div id="search_icondiv">
-          <AiOutlineSearch id="search_icon" />
-        </div>
-      </form> : <div></div>
+          <form id="menu_search" onClick={handleFormClick} autoComplete="off">
+            <div class="search_setting">
+              <label for="search_location" class="search_label">Location</label>
+              <input name="search_location" value={searchPlace} class="search_item" type="text" placeholder="Where are you going?" onClick={handleSearchPlace} onChange={handleFlexibleChange}/>
+            </div>
+            <hr class="hr_title"/>
+            <div class="search_setting">
+              <label for="search_location" class="search_label">Checkin</label>
+              <DatePicker selected={checkinDate} showPopperArrow={false} onChange={date => { setCheckinDate(date);if(checkoutDate < date && checkoutDate !== '' ) setCheckoutDate(date);}} locale="es" minDate={new Date()} id="checkin_item" format='MM-dd-yyyy' type="date" placeholderText="Add dates" />
+            </div>
+            <hr class="hr_title"/>
+            <div class="search_setting">
+              <label for="search_location" class="search_label">Checkout</label>
+              <DatePicker selected={checkoutDate} showPopperArrow={false} onChange={date => {setCheckoutDate(date); if(date < checkinDate) setCheckinDate(date);}} locale="es" minDate={checkinDate} id="checkout_item" format='MM-dd-yyyy' type="date" placeholderText="Add dates"/>
+            </div>
+            <hr class="hr_title"/>
+            <div class="search_setting">
+              <label for="search_location" class="search_label">Guests</label>
+              <input name="search_location" class="search_item" type="text" placeholder="Add guests" value={guestValue} onClick={handleGuestChange}/>
+            </div>
+            <div id="search_icondiv">
+              <AiOutlineSearch id="search_icon" />
+            </div>
+          </form>  : titleChoice === 1 ?
+          <form id="menu_expereince" autoComplete="off">
+            <div class="search_setting">
+              <label for="search_location" class="search_label">Location</label>
+              <input name="search_location" class="search_item" type="text" placeholder="Where are you going?" />
+            </div>
+            <hr class="hr_title"/>
+            <div class="search_setting">
+              <label for="search_date" class="search_label">Date</label>
+              <DatePicker selected={flexibleDate} showPopperArrow={false} onChange={date => setFlexibleDate(date)} locale="es" minDate={new Date()} id="flexible_item" format='MM-dd-yyyy' type="date" placeholderText="Add dates"/>
+            </div>
+            <div id="search_icondiv">
+              <AiOutlineSearch id="search_icon" />
+            </div>
+          </form> : <div></div>
         }
         {flexibleForm ? <div id="flexibale_form" onClick={handleFormClick} style={{display: "flex", flexDirection: "column",backgroundColor: "white",border:"none"}}>
           <label id="flexible_form_label" for="flexible_form_button" style={{fontSize:"12px",fontWeight:"bold",color: "black",textAlign:"left",marginTop: "20px",marginLeft: "15px"}}>GO ANYWHERE, ANYTIME</label>
@@ -352,8 +352,8 @@ function App() {
             <span style={{marginRight: "5px", border:"none",padding:"15px"}}>&gt;</span>
           </button>
         
-      </div> : <div></div>}
-      {guestForm ? <div id="guest_form" onClick={handleFormClick} style={{marginLeft:"auto",marginRight:"5px",display: "flex", flexDirection: "column",backgroundColor: "white",border:"none"}}>
+        </div> : <div></div>}
+        {guestForm ? <div id="guest_form" onClick={handleFormClick} style={{marginLeft:"auto",marginRight:"5px",display: "flex", flexDirection: "column",backgroundColor: "white",border:"none"}}>
           <div style={{display: "flex", flexDirection: "row", justifyContent:"space-between"}}>
             <label for="adult_guest" style={{display: "flex", flexDirection: "column",fontSize:"16px",color: "black",textAlign:"left",marginTop: "20px",marginLeft: "15px"}}>
               <div style={{fontWeight:"bold",color: "black"}}>Adults</div>
@@ -390,12 +390,12 @@ function App() {
             </div>
           </div>
         
-      </div> : <div></div>}
-      <div id="menu_flexible">
+        </div> : <div></div>}
+        <div id="menu_flexible">
           <div>Not sure where to go? Perfect.</div>
           <div id="button_flexible"><span id="button_flexibleText">I'm flexible</span></div>
-      </div>
-      <div id="title_simulation">Yuhong's simulation of Airbnb</div>
+        </div>
+        <div id="title_simulation">Yuhong's simulation of Airbnb</div>
       </header>
       <body>
         <Nearby />   

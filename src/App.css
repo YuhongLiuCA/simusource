@@ -136,11 +136,11 @@ input:focus {
   border: none;
   position: absolute;
   bottom: 150px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 20px;
   color: white;
   font-size: 20px;
+  margin-left: 35%;
+  margin-right: auto;
 }
 #button_flexible {
   background-color: white;
@@ -250,22 +250,3 @@ button:hover {
 .App-link {
   color: #61dafb;
 }
-
-/*.input-container .react-datepicker-wrapper {
-  margin: 12px 0;
-  width: 100%;
-}
-
-.input-container .react-datepicker-wrapper input {
-  padding: 4px 12px;
-}*/
-
-
-/*@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}*/
